@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create a new account</title>
+  </head>
+  <body style="background-image: linear-gradient(to right, #8360c3, #2ebf91);">
+  <h1>Checking Balance</h1>
+  <form action="#" th:action="@{/chkbal}" th:object="${customer}" method="POST">
+  											<!-- we need to give it a name so that we can request param -->
+		<p>Please Enter your account number:  <input name="a_no" type="text" th:value="*{account_no}" /></p>
+		<p><input type="submit" value="Submit"></p>
+		
+</form>
+  </body>
+</html>
